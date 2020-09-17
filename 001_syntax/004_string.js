@@ -4,6 +4,7 @@
  */
 
 function length(str) {
+  return(str.length);
 }
 
 /**
@@ -12,6 +13,12 @@ function length(str) {
  */
 
 function lengthIsEven(str) {
+  var i = str.length;
+  if (i%2==0) {
+    return(true);
+  }else {
+    return(false);
+  }
 }
 
 /**
@@ -20,6 +27,7 @@ function lengthIsEven(str) {
  */
 
 function firstChar(str) {
+  return(str.charAt(0));
 }
 
 /**
@@ -28,6 +36,7 @@ function firstChar(str) {
  */
 
 function lastChar(str) {
+  return(str.slice(-1));
 }
 
 /**
@@ -37,6 +46,8 @@ function lastChar(str) {
  */
 
 function substring(str, a, b) {
+  a -= 1;
+  return(str.substring(a,b));
 }
 
 /**
@@ -51,6 +62,11 @@ function substring(str, a, b) {
  * */
 
 function isInclude(a, b) {
+  if (a.indexOf(b)!=-1) {
+    return(true);
+  }else {
+    return(false);
+  }
 }
 
 /**
@@ -65,6 +81,12 @@ function isInclude(a, b) {
  */
 
 function printByChar(str) {
+  var i = str.length;
+  var n = 0;
+  do{
+    console.log(str.charAt(n));
+    n += 1;
+  }while(i>n);
 }
 
 

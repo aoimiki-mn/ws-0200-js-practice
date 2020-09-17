@@ -78,4 +78,4 @@ describe('getDay', () => {
     getDay(7)
     expect(outputs.length).toEqual(0);
   });
-}
+});
