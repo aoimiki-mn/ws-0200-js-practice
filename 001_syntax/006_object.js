@@ -31,6 +31,16 @@ function getPersonObject() {
  */
 
 function mutateObject(person) {
+   let obj  = {
+     name: 'Bob',
+     age: 32,
+     gender: 'male'
+   };
+   obj.name='Mary',
+   obj.age= 37,
+   obj.gender='female'
+   return obj;
+
 }
 
 /**
@@ -55,6 +65,13 @@ function mutateObject(person) {
  */
 
 function assignNumber(persons) {
+  let persons = ('Bob','Mary','Ann','Mike');
+  var min = 1;
+  var max = 10;
+  var a = Math.floor(Math.random()*(max + 1 - min )) + min;
+  let persons = a;
+  return persons;
+
 }
 
 /**
@@ -69,6 +86,11 @@ function assignNumber(persons) {
  */
 
 function isDuplicate(array) {
+  for (var i = 0; i < array.length; i++) {
+    if (array[0] == array[i]) {
+
+    }array[i]
+  }
 }
 
 module.exports = {

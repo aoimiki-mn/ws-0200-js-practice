@@ -12,6 +12,7 @@
  */
 
 function length(str) {
+
 }
 
 /**
@@ -26,6 +27,7 @@ function length(str) {
  *
  */
 function reverse(str) {
+  return str.split("").reverse().join("");
 }
 
 /**
@@ -41,6 +43,7 @@ function reverse(str) {
  */
 
 function findIndex(str, char) {
+  console.log(str.indexOf(char));
 }
 
 /**
