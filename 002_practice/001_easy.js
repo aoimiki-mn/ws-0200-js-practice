@@ -12,7 +12,10 @@
  */
 
 function length(str) {
+  let text = 0;
+  while (text<) {
 
+  }
 }
 
 /**
@@ -28,7 +31,8 @@ function length(str) {
  */
 function reverse(str) {
   return str.split("").reverse().join("");
-}
+  }
+
 
 /**
  *  指定された文字列の位置を返却
@@ -43,7 +47,7 @@ function reverse(str) {
  */
 
 function findIndex(str, char) {
-  console.log(str.indexOf(char));
+  return str.indexOf(char);
 }
 
 /**
