@@ -47,7 +47,17 @@ function reverse(str) {
  */
 
 function findIndex(str, char) {
-  return str.indexOf(char);
+  let index = 0;
+  let i = 0;
+  while ( i < str.length  ) {
+    if (str[i] = char) {
+      return index;
+    }else {
+      index += 1 ;
+      i += 1 ;
+    }
+  }
+  return -1 ;
 }
 
 /**
@@ -63,6 +73,7 @@ function findIndex(str, char) {
  */
 
 function split(a, b) {
+  return a.split("b");
 }
 
 /**
@@ -78,6 +89,9 @@ function split(a, b) {
  */
 
 function sum(array) {
+  return array.reduce(function(sum,element){
+    return sum + element;
+  });
 }
 
 /**
