@@ -238,6 +238,13 @@ function seq(num) {
  */
 
 function filter(array, num) {
+   let a = []
+   for (let i = 0; i < array.length; i++) {
+      if (array[i] <= num) {
+        a.push(array[i])
+      }
+   }
+   return a
 }
 
 
@@ -264,21 +271,19 @@ function filter(array, num) {
  *    30 FizzBuzz
  *    ...
  */
-
-function fizzBuzz () {
+ function fizzBuzz () {
   let str = "";
   for (var i = 1; i <= 100; i++) {
-    str = String(i);
+    str = i + ' ';
     let x = i%3;
     let y = i%5;
-    if (x=0) {
+    if (x===0) {
      str=str+"Fizz";
     }
-    if (y=0) {
+    if (y===0) {
      str=str+"Buzz";
     }
     console.log(str);
-
   }
 }
 
