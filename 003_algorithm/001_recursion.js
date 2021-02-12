@@ -28,6 +28,10 @@ function sumSequence (n, sum = 0) {
  */
 
 function fibonacci (num, index = 0, array = []) {
+   array[0] = 1;
+  for (var i = 1; i < num; i++) {
+    array[i] = array[i-1] + array[i-2];
+  }
 }
 
 
