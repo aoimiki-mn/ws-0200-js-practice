@@ -11,6 +11,10 @@
  */
 
 function sumSequence (n, sum = 0) {
+  for (var i = 0; i < n; i++) {
+    sum = sum + (i + 1) ;
+  }
+  return sum ;
 }
 
 /**
